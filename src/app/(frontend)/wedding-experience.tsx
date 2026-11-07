@@ -214,7 +214,7 @@ export default function WeddingExperience() {
                 <p className={textStyles.heroDate}>{content.hero.date}</p>
               </div>
 
-              <div className="hero-copy-motion pointer-events-auto absolute inset-x-0 top-[58svh] z-20 mx-auto max-w-5xl px-4 sm:top-[66svh] sm:px-8">
+              <div className="hero-copy-motion pointer-events-auto absolute inset-x-0 top-[45svh] z-20 mx-auto max-w-5xl px-4 sm:top-[66svh] sm:px-8">
                 <div className="bg-white/60 px-6 py-5 text-[var(--color-fuchsia)] sm:px-10 sm:py-6">
                   <p className={textStyles.heroBody}>{content.hero.body}</p>
                   <div className="mt-4 flex flex-col items-center gap-3 sm:mt-3 sm:flex-row sm:justify-center sm:gap-10">
