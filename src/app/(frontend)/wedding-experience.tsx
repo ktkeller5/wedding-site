@@ -235,21 +235,19 @@ export default function WeddingExperience() {
             id={content.weekend.sectionId}
             className="relative min-h-[200svh]"
           >
-            <div className="sticky top-0 h-[100svh] overflow-hidden bg-[var(--color-mapSky)]">
-              <Image
-                src="/images/Watercolor wedding map with expanded ivory sky.png"
-                alt={content.weekend.mapAlt}
-                fill
-                sizes="100vw"
-                className="weekend-map-image"
-              />
-              <div className="absolute inset-x-0 top-0 z-10 flex h-[40svh] items-center justify-center px-5 text-center sm:h-[38svh] sm:px-10">
-                <div className="w-full max-w-4xl">
-                  <div className="section-title-motion" style={{ transformOrigin: 'center' }}>
-                    <p className={textStyles.sectionEyebrow}>{content.weekend.eyebrow}</p>
-                    <h2 className={textStyles.weekendTitle}>{content.weekend.title}</h2>
-                  </div>
-                  <div className="section-body-motion mx-auto mt-6 grid max-w-4xl grid-cols-3 gap-3 sm:mt-8 sm:gap-10">
+            <div
+              className="sticky top-0 h-[100svh]"
+              style={{
+                backgroundImage: "url('/images/mapbackground.jpg')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            >
+              <div className="weekend-text-slide relative z-10 px-5 pt-[10svh] pb-4 text-center sm:px-10 sm:pt-[11svh] sm:pb-6">
+                <div className="mx-auto w-full max-w-4xl">
+                  <p className={textStyles.sectionEyebrow}>{content.weekend.eyebrow}</p>
+                  <h2 className={textStyles.weekendTitle}>{content.weekend.title}</h2>
+                  <div className="mx-auto mt-6 grid max-w-4xl grid-cols-3 gap-3 sm:mt-8 sm:gap-10">
                     {content.weekend.schedule.map((item) => (
                       <div key={item.day} className="text-center">
                         <p className="text-xs font-semibold text-[var(--color-earth)] sm:text-sm">
@@ -263,6 +261,14 @@ export default function WeddingExperience() {
                   </div>
                 </div>
               </div>
+              <Image
+                src="/images/croppedimage.jpg"
+                alt={content.weekend.mapAlt}
+                width={1536}
+                height={1024}
+                sizes="100vw"
+                className="relative block h-auto w-full"
+              />
             </div>
           </section>
 

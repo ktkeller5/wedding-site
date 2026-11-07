@@ -22,7 +22,7 @@ export const colors = {
   blush: '#F0D2B0',
   pink: '#EEBCAE',
   cream: '#FFFAF0',
-  mapSky: '#F2E9D5',
+  mapSky: '#F5EBE0',
   gateStripe: '#FCE9BE',
   earth: '#394027', // dark text / UI foreground
   error: '#9D3548', // form error text
@@ -53,7 +53,7 @@ export const fonts = {
  * ========================================================================= */
 export const textStyles = {
   heroTitle:
-    'hero-main-title font-script text-7xl leading-[0.9] drop-shadow-md sm:text-8xl',
+    'hero-main-title font-script text-6xl leading-[0.9] drop-shadow-md sm:text-8xl',
   heroDate:
     'hero-date mt-3 text-[clamp(1.1rem,2vw,1.6rem)] leading-none tracking-[0.08em] text-white drop-shadow-md',
   heroBody: 'text-xl font-medium leading-[1.4] sm:text-2xl sm:leading-[1.45]',
@@ -65,13 +65,13 @@ export const textStyles = {
     'font-script text-[clamp(3.25rem,10vw,7.4rem)] leading-[0.82] text-[var(--color-orange)]',
 
   sectionEyebrow: 'eyebrow',
-  weekendTitle: 'font-script mt-3 text-7xl text-[var(--color-orange)] sm:text-8xl',
+  weekendTitle: 'font-script mt-3 text-5xl text-[var(--color-orange)] sm:text-8xl',
   weekendRow: 'border-b border-[var(--color-earth)]/20 py-4 text-base leading-7 text-[var(--color-earth)] last:border-b-0 sm:text-lg sm:leading-8',
 
-  stayTitle: 'font-script mt-3 text-7xl text-[var(--color-fuchsia)] sm:text-8xl',
+  stayTitle: 'font-script mt-3 text-5xl text-[var(--color-fuchsia)] sm:text-8xl',
   stayBody: 'text-lg leading-8 text-[var(--color-earth)]',
 
-  faqTitle: 'font-script mt-3 text-7xl text-[var(--color-orange)] sm:text-8xl',
+  faqTitle: 'font-script mt-3 text-5xl text-[var(--color-orange)] sm:text-8xl',
   faqQuestion: 'flex w-full items-center justify-between gap-6 py-6 text-left text-lg sm:py-8 sm:text-xl',
 
   footerScript: 'font-script mt-3 text-3xl text-[var(--color-butter)] sm:text-4xl',
