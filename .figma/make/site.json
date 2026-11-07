@@ -1,0 +1,11 @@
+{
+  "title": "Katie & Ionel | 7.31.2027",
+  "description": "Join Katie and Ionel for their wedding weekend in Montecito.",
+  "language": "en",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": true
+  }
+}
