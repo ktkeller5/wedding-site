@@ -233,43 +233,39 @@ export default function WeddingExperience() {
           <section
             ref={weekendRef}
             id={content.weekend.sectionId}
-            className="relative min-h-[200svh]"
+            className="relative"
+            style={{
+              backgroundImage: "url('/images/mapbackground.jpg')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
           >
-            <div
-              className="sticky top-0 h-[100svh]"
-              style={{
-                backgroundImage: "url('/images/mapbackground.jpg')",
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}
-            >
-              <div className="weekend-text-slide relative z-10 px-5 pt-[10svh] pb-4 text-center sm:px-10 sm:pt-[11svh] sm:pb-6">
-                <div className="mx-auto w-full max-w-4xl">
-                  <p className={textStyles.sectionEyebrow}>{content.weekend.eyebrow}</p>
-                  <h2 className={textStyles.weekendTitle}>{content.weekend.title}</h2>
-                  <div className="mx-auto mt-6 grid max-w-4xl grid-cols-3 gap-3 sm:mt-8 sm:gap-10">
-                    {content.weekend.schedule.map((item) => (
-                      <div key={item.day} className="text-center">
-                        <p className="text-xs font-semibold text-[var(--color-earth)] sm:text-sm">
-                          {item.day}, {item.date}
-                        </p>
-                        <p className="mt-1.5 text-[0.7rem] leading-snug text-[var(--color-earth)]/80 sm:mt-2 sm:text-sm sm:leading-relaxed">
-                          {item.detail}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
+            <div className="px-5 pt-[10svh] pb-6 text-center sm:px-10 sm:pt-[11svh] sm:pb-8">
+              <div className="mx-auto w-full max-w-4xl">
+                <p className={textStyles.sectionEyebrow}>{content.weekend.eyebrow}</p>
+                <h2 className={textStyles.weekendTitle}>{content.weekend.title}</h2>
+                <div className="mx-auto mt-6 grid max-w-4xl grid-cols-3 gap-3 sm:mt-8 sm:gap-10">
+                  {content.weekend.schedule.map((item) => (
+                    <div key={item.day} className="text-center">
+                      <p className="text-xs font-semibold text-[var(--color-earth)] sm:text-sm">
+                        {item.day}, {item.date}
+                      </p>
+                      <p className="mt-1.5 text-[0.7rem] leading-snug text-[var(--color-earth)]/80 sm:mt-2 sm:text-sm sm:leading-relaxed">
+                        {item.detail}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </div>
-              <Image
-                src="/images/croppedimage.jpg"
-                alt={content.weekend.mapAlt}
-                width={1536}
-                height={1024}
-                sizes="100vw"
-                className="relative block h-auto w-full"
-              />
             </div>
+            <Image
+              src="/images/croppedimage.jpg"
+              alt={content.weekend.mapAlt}
+              width={1536}
+              height={1024}
+              sizes="100vw"
+              className="block h-auto w-full"
+            />
           </section>
 
           <section

@@ -124,7 +124,7 @@
 }
 
 .weekend-text-slide {
-  transform: translateY(calc((1 - var(--section-progress, 0)) * 85svh));
+  transform: translateY(calc((0.5 - min(0.5, var(--section-progress, 0))) * 170svh));
   will-change: transform;
 }
 
